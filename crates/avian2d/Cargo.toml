@@ -73,11 +73,11 @@ bench = false
 
 [dependencies]
 avian_derive = { path = "../avian_derive", version = "0.2" }
-bevy = { version = "0.19.0", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main", version = "0.20.0-dev", default-features = false, features = [
     "std",
     "bevy_log",
 ] }
-bevy_math = { version = "0.19.0", features = ["approx"] }
+bevy_math = { git = "https://github.com/bevyengine/bevy.git", branch = "main", version = "0.20.0-dev", features = ["approx"] }
 glam_matrix_extras = { version = "0.3", features = ["bevy_reflect"] }
 bevy_heavy = { version = "0.5" }
 bevy_transform_interpolation = { version = "0.5" }
@@ -98,7 +98,7 @@ disqualified = { version = "1.0" }
 
 [dev-dependencies]
 examples_common_2d = { path = "../examples_common_2d" }
-bevy = { version = "0.19.0", default-features = false, features = ["2d", "ui"] }
+bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main", version = "0.20.0-dev", default-features = false, features = ["2d", "ui"] }
 bevy_heavy = { version = "0.5", features = ["approx"] }
 glam = { version = "0.32", features = ["bytemuck"] }
 bytemuck = "1.19"
